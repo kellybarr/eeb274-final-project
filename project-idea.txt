@@ -1,0 +1,3 @@
+I've already related this idea to Dr. Alfaro, but to live up to class obligations, I'll describe it here.  
+
+I would like to create an analysis of dispersal kernels using isolation by distance.  The idea is to use create a Approximate Bayesian Computation method that simulates dispersal over a variety of kernel types and then to determine the kernel for empirical data that I have for Cactus Wrens and California Gnatcatchers.  There is a population genetics simulation program called IBD_Sim that I would like to center the code around.  I would create a randomizer to create input into IBD_Sim, simulate a variety of dispersal kernels, and then analyze those psuedo-datasets to determine the most likely scenario based upon some set of summary statistics.  
