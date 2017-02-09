@@ -1,0 +1,29 @@
+%%%%% SIMULATION PARAMETERS %%%%%%%%%%%%
+Data_File_Name=ContPop
+Run_Number=10
+Migraine_Settings=T
+
+%%%%% MARKERS PARAMETER S%%%%%%%%%%%%%%%
+Locus_Number=5
+Mutation_Rate=0.0005
+Mutation_Model=SMM
+Allelic_Upper_Bound=200
+
+
+%%%%%%%% DEMOGRAPHIC OPTIONS %%%%%%%%%%%%%
+
+
+%% LATTICE
+Lattice_SizeX=500
+Lattice_SizeY=500
+Ind_Per_Pop=1
+
+%% SAMPLE
+Sample_SizeX=15
+Sample_SizeY=15
+Min_Sample_CoordinateX=200
+Min_Sample_CoordinateY=200
+Ind_Per_Pop_Sampled=1
+
+%% DISPERSAL
+Dispersal_Distribution=9
