@@ -1,0 +1,100 @@
+%%%%% SIMULATION PARAMETERS %%%%%%%%%%%%
+Data_File_Name=TestIBDSim
+.txt_extension=true
+Run_Number=10
+Random_Seeds=87144630
+Pause=Final
+
+%%%%% MARKERS PARAMETERS %%%%%%%%%%%%%%%
+Locus_Number = 2, 1, 2, 1
+Mutation_Rate = 0.001, 0.001, 0.001, 0.002
+Mutation_Model = ISM, KAM, SMM, TN93
+
+Variable_Mutation_Rate = F, F, T, F
+Polymorphic_Loci_Only = T, F, F,T
+Allelic_Lower_Bound = NA, 3, 5, NA
+Allelic_Upper_Bound = NA, 20, 50, NA
+Allelic_State_MRCA = NA, 8, 6, NA
+Repeated_motif_size = NA, 1, 1, NA
+SMM_Probability_In_TPM = NA, 0.01, 0.2, NA
+Geometric_Variance_In_TPM = NA, 2.6, 3.5, NA
+Geometric_Variance_In_GSM = NA, 0.56, 0.93, NA
+Ploidy=Diploid
+
+%% SEQUENCE SPECIFIC SETTINGS
+MRCA_Sequence = AGCTAGCTAGCT
+%Note, Sequence_Size is redundant information here! %
+Sequence_Size = 12
+Transition_Transversion_ratio = 0.7
+Transition1_Transition2_ratio = 1.2
+Equilibrium_Frequencies = 0.1 0.4 0.3 0.2
+
+%%%%%% OUTPUT FILE FORMAT OPTIONS %%%%%%%
+Genepop=T
+Migrate=F
+Migrate_Letter=F
+Nexus_file_format = Haplotypes_only
+
+%%%%%% VARIOUS COMPUTATION OPTION S%%%%%%%
+%The code below can be specified in a single line
+DiagnosticTables=Iterative_Identity_Probability,Hexp,Fis,Seq_stats
+DiagnosticTables=Prob_Id_Matrix,Effective_Dispersal,Iterative_statistics
+
+%%%%%%%% DEMOGRAPHIC OPTIONS %%%%%%%%%%%%%
+
+%% LATTICE 
+Lattice_Boundaries=absorbing
+Total_Range_Dispersal=F
+Lattice_SizeX=100
+Lattice_SizeY=50
+Ind_Per_Pop=100
+Void_Nodes=1
+Specific_Density_Design=false
+Zone=T
+Void_Nodes_Zone=1
+Ind_Per_Pop_Zone=50
+Min_Zone_CoordinateX=5
+Max_Zone_CoordinateX=15
+Min_Zone_CoordinateY=5
+Max_Zone_CoordinateY=15
+
+%% SAMPLE
+%% classical squared sample design:
+Sample_SizeX=10
+Sample_SizeY=10
+Min_Sample_CoordinateX=5
+Min_Sample_CoordinateY=5
+
+%% DISPERSAL
+Dispersal_Distribution=1
+Immigration_Control=Simple1DProduct
+Total_Emigration_Rate=0.1
+Dist_max=48
+Pareto_Shape=2.16574
+Geometric_Shape=0.75
+Sichel_Gamma=-2.15
+Sichel_Xi=20.72
+Sichel_Omega=-1
+
+%% CONTINUOUS CHANGE IN DENSITY
+ContinuousDemeSizeVariation=F
+
+%% FIRST DEMOGRAPHIC CHANGE
+NewDemographicPhaseAt=50
+Ind_Per_Pop=20
+Lattice_SizeX=50
+Lattice_SizeY=50
+Random_Translation=true
+
+Zone=false
+
+%%continuous change in deme size
+ContinuousDemeSizeVariation=Exponential
+
+%% SECOND DEMOGRAPHIC CHANGE
+NewDemographicPhaseAt=200
+Ind_Per_Pop=1
+Lattice_SizeY=10
+Random_Translation=true
+
+%%%%%% EndOfSettings %%%%%%%%
