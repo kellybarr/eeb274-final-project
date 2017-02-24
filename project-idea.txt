@@ -1,3 +1,18 @@
 I've already related this idea to Dr. Alfaro, but to live up to class obligations, I'll describe it here.  
 
 I would like to create an analysis of dispersal kernels using isolation by distance.  The idea is to use create a Approximate Bayesian Computation method that simulates dispersal over a variety of kernel types and then to determine the kernel for empirical data that I have for Cactus Wrens and California Gnatcatchers.  There is a population genetics simulation program called IBD_Sim that I would like to center the code around.  I would create a randomizer to create input into IBD_Sim, simulate a variety of dispersal kernels, and then analyze those psuedo-datasets to determine the most likely scenario based upon some set of summary statistics.  
+
+###update
+
+I need to make a mid-stream switch.  The task I created for myself above is far too large given the great many obligations
+of the 2nd quarter.  Plus, this project was meant to aim for gold of meeting my quantitative obligations when in fact
+I have a stats class scheduled for next quarter for that purpsoe.  Instead, I'm switching to a more reasonable, more likely 
+to be accomplished within the time frame project.  
+
+Namely, I'm going to grab data from ebird for the 2 species on which I'm presently working, the Tricolored Blackbird and
+the Burrowing Owl, and attempt to build habitat models for the species with MAXENT.  If possible, I would like to find 
+additional layers beyond the typical climatic ones to fine-tune the models.  For the Tricolored Blackbird, that would include 
+information about standing water, which is a requirement for breeding.  For the Burrowing Owl, having information 
+about the presence of fossorial mammals would be beneficial. 
+
+I'm going to attempt to catch up on lagging requirements for this project today, 2/24/2017.
